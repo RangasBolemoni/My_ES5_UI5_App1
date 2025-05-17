@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.17.5",
-      "toolsId": "4cbe8105-7504-4853-be36-c72fadb2cc33"
+      "toolsId": "e4938dde-0c83-430b-bbc4-90469f039ccc"
     },
     "dataSources": {
       "mainService": {
@@ -101,15 +101,15 @@
       },
       "routes": [
         {
-          "name": "RouteApp",
+          "name": "RouteSuppliers",
           "pattern": ":?query:",
           "target": [
-            "TargetApp"
+            "TargetSuppliers"
           ]
         }
       ],
       "targets": {
-        "TargetApp": {
+        "TargetSuppliers": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
@@ -119,7 +119,7 @@
       }
     },
     "rootView": {
-      "viewName": "ns.businesspartners.view.Suppliers",
+      "viewName": "ns.businesspartners.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

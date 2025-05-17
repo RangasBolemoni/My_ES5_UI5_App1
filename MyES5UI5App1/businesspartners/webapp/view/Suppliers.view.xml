@@ -2,6 +2,12 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <List noDataText="{i18n>noDataSupplier}" items="{/BusinessPartnerSet}">
+                <items>
+                    <StandardListItem id="_IDGenStandardListItem" type="Navigation" title="{CompanyName}" description="Address is: {WebAddress}" icon="sap-icon://picture" />
+                </items>
+            </List>
+        </content>
     </Page>
 </mvc:View>
